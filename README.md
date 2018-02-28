@@ -26,6 +26,10 @@ $ sadako rm
 
 ## Development
 
+```
+$ dep ensure
+```
+
 sadakoの音を流すスクリプトをbuild
 
 ```
