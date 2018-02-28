@@ -8,7 +8,7 @@ import (
 	"github.com/urfave/cli"
 )
 
-var sadakoSrcPath = os.Getenv("GOPATH") + "/src/github.com/konojunya/sadako-git-pull"
+var sadakoSrcPath = os.Getenv("GOPATH") + "/src/github.com/konojunya/sadako"
 
 // Remove sadakoを実行したrepositoryから削除する
 func Remove(c *cli.Context) {
@@ -55,7 +55,7 @@ func Set(c *cli.Context) {
 	found = exists(sadakoSrcPath)
 	if !found {
 		fmt.Println("sadako speak binary is not found.\n" +
-			"Please `go get github.com/konojunya/sadako-git-pull`")
+			"Please `go get github.com/konojunya/sadako`")
 		os.Exit(0)
 	}
 

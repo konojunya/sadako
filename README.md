@@ -1,4 +1,4 @@
-# sadako-git-pull
+# sadako
 
 git pullをフックして貞子の音楽を流す。
 
