@@ -16,26 +16,18 @@ func Remove(c *cli.Context) {
 	found := exists(".git")
 	if !found {
 		fmt.Println("This directory is not git repository yet :(")
-		os.Exit(0)
+		os.Exit(1)
 	}
 
 	var sadako = ".git/hooks/post-merge"
-	var soundFile = ".git/hooks/sadako.mp3"
 	sadakoFound := exists(sadako)
-	soundFound := exists(soundFile)
 	if !sadakoFound {
 		fmt.Println("sadako speak binary is not found.\n" +
 			"Where did she go... :p")
-		os.Exit(0)
+		os.Exit(1)
 	}
 	if err := os.Remove(sadako); err != nil {
 		panic(err)
-	}
-
-	if soundFound {
-		if err := os.Remove(soundFile); err != nil {
-			panic(err)
-		}
 	}
 
 	fmt.Println("Sadako has gone :)")
@@ -48,7 +40,7 @@ func Set(c *cli.Context) {
 	found := exists(".git")
 	if !found {
 		fmt.Println("This directory is not git repository yet :(")
-		os.Exit(0)
+		os.Exit(1)
 	}
 
 	// When not found source.
@@ -56,7 +48,7 @@ func Set(c *cli.Context) {
 	if !found {
 		fmt.Println("sadako speak binary is not found.\n" +
 			"Please `go get github.com/konojunya/sadako`")
-		os.Exit(0)
+		os.Exit(1)
 	}
 
 	// first: sadako-speak
@@ -70,11 +62,6 @@ func Set(c *cli.Context) {
 	}
 	// 実行権限を与える
 	os.Chmod(path+"/.git/hooks/post-merge", 0755)
-
-	// second: mp3 file
-	if err = copy(sadakoSrcPath+"/media/sadako.mp3", path+"/.git/hooks/sadako.mp3"); err != nil {
-		panic(err)
-	}
 
 	fmt.Println("Sadako is near you... :)")
 }

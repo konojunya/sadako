@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("sadako.mp3")
+	f, err := os.Open(os.Getenv("GOPATH") + "/src/github.com/konojunya/sadako/media/sadako.mp3")
 	if err != nil {
 		panic(err)
 	}
