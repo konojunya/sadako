@@ -26,5 +26,10 @@ func getCommands() []cli.Command {
 			Usage:  "set sadako in your git repository",
 			Action: action.Set,
 		},
+		{
+			Name:   "rm",
+			Usage:  "remove sadako... :)",
+			Action: action.Remove,
+		},
 	}
 }
