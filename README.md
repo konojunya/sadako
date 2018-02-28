@@ -1,6 +1,6 @@
 # sadako-git-pull
 
-git pullをフックして貞子の音楽を流す
+git pullをフックして貞子の音楽を流す。
 
 ## Usage
 
