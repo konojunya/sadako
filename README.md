@@ -2,6 +2,8 @@
 
 git pullをフックして貞子の音楽を流す。
 
+![](https://raw.githubusercontent.com/konojunya/sadako-git-pull/master/media/sadako.png)
+
 ## Usage
 
 ```
