@@ -9,7 +9,7 @@ import (
 	"github.com/faiface/beep/speaker"
 )
 
-// Speak 貞子の音声（git pull~を鳴らす）
+// Speak Play Sadako's sound
 func Speak(f *os.File) error {
 	s, format, err := mp3.Decode(f)
 	if err != nil {

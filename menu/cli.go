@@ -5,7 +5,7 @@ import (
 	"github.com/urfave/cli"
 )
 
-// Getapp 設定を終わらせたappをmainへ返す
+// Getapp Returning the app that finished setting to main.go
 func Getapp() *cli.App {
 	app := cli.NewApp()
 	config(app)
