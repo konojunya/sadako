@@ -4,13 +4,17 @@ Sadako will appear after merge :)
 
 ![](https://raw.githubusercontent.com/konojunya/sadako/master/media/sadako.png)
 
-## Usage
+Sadako is a command line tool that hooks the git-pull event (post-merge) and plays a parody of a famous song.
 
-first:
+Since Sadako's explanation is at the bottom of the README, I think that it is better for those who do not know Sadako to go through it once.
+
+## Installation
 
 ```
 $ go get github.com/konojunya/sadako
 ```
+
+## Usage
 
 - I will send Sadako to your git repository.
 
@@ -35,9 +39,9 @@ $ make install
 
 ## Who is Sadako?
 
-Sadako is a fictitious character who appears in a Japanese movie called a 'Ring'.
+> Sadako is a fictitious character who appears in a Japanese movie called a 'Ring'.
 
-Leave unrefined or grudge in this world, trigger a disaster starting from the "curse video" that curses and kills those who saw.
+> Leave unrefined or grudge in this world, trigger a disaster starting from the "curse video" that curses and kills those who saw.
 
 ## Auther
 
