@@ -22,8 +22,8 @@ func config(app *cli.App) {
 func getCommands() []cli.Command {
 	return []cli.Command{
 		{
-			Name:   "set",
-			Usage:  "set sadako in your git repository",
+			Name:   "init",
+			Usage:  "sadako in your git repository",
 			Action: action.Set,
 		},
 		{
