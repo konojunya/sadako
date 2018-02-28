@@ -32,7 +32,7 @@ func Remove(c *cli.Context) {
 
 }
 
-// Set .git/hooks/post-mergeにコピーする
+// Set copy to .git/hooks/post-merge
 func Set(c *cli.Context) {
 	sadakoSrcPath := os.Getenv("GOPATH") + "/src/github.com/konojunya/sadako"
 
@@ -60,7 +60,7 @@ func Set(c *cli.Context) {
 	if err = copy(sadakoSrcPath+"/speak", path+"/.git/hooks/post-merge"); err != nil {
 		panic(err)
 	}
-	// 実行権限を与える
+	// Grant execution authority
 	os.Chmod(path+"/.git/hooks/post-merge", 0755)
 
 	fmt.Println("Sadako is near you... :)")

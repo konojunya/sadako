@@ -14,7 +14,7 @@ var aa = "" +
 	"RBDTgD4DmaMPxOjGgRSApLmgcvrggOiHK+ECC2LTzAVUBhTwAglC5CDiQFu5oD6CyCBkQVJcAE4i" +
 	"5FepAQAA"
 
-// DrawAA 貞子のAAを描画する
+// DrawAA Draw Sadako's AA
 func DrawAA() {
 
 	b, err := base64.StdEncoding.DecodeString(aa)
