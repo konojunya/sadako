@@ -2,7 +2,7 @@
 
 git pullをフックして貞子の音楽を流す。
 
-![](https://raw.githubusercontent.com/konojunya/sadako-git-pull/master/media/sadako.png)
+![](https://raw.githubusercontent.com/konojunya/sadako/master/media/sadako.png)
 
 ## Usage
 
@@ -15,7 +15,7 @@ $ go get github.com/konojunya/sadako
 貞子をgitリポジトリに住ませる
 
 ```
-$ sadako set
+$ sadako init
 ```
 
 貞子をgitリポジトリから抹消する

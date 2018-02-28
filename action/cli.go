@@ -8,8 +8,6 @@ import (
 	"github.com/urfave/cli"
 )
 
-var sadakoSrcPath = os.Getenv("GOPATH") + "/src/github.com/konojunya/sadako"
-
 // Remove sadakoを実行したrepositoryから削除する
 func Remove(c *cli.Context) {
 	// When not git repository.
@@ -36,6 +34,8 @@ func Remove(c *cli.Context) {
 
 // Set .git/hooks/post-mergeにコピーする
 func Set(c *cli.Context) {
+	sadakoSrcPath := os.Getenv("GOPATH") + "/src/github.com/konojunya/sadako"
+
 	// When not git repository.
 	found := exists(".git")
 	if !found {

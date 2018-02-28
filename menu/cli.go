@@ -1,7 +1,7 @@
 package menu
 
 import (
-	"github.com/konojunya/sadako-git-pull/action"
+	"github.com/konojunya/sadako/action"
 	"github.com/urfave/cli"
 )
 

@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/konojunya/sadako-git-pull/art"
-	"github.com/konojunya/sadako-git-pull/sound"
+	"github.com/konojunya/sadako/art"
+	"github.com/konojunya/sadako/sound"
 )
 
 func main() {
