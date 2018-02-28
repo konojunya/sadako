@@ -1,4 +1,4 @@
-package main
+package art
 
 import (
 	"bytes"
@@ -6,12 +6,6 @@ import (
 	"encoding/base64"
 	"fmt"
 	"io"
-	"os"
-	"time"
-
-	"github.com/faiface/beep"
-	"github.com/faiface/beep/mp3"
-	"github.com/faiface/beep/speaker"
 )
 
 var aa = "" +
@@ -20,16 +14,8 @@ var aa = "" +
 	"RBDTgD4DmaMPxOjGgRSApLmgcvrggOiHK+ECC2LTzAVUBhTwAglC5CDiQFu5oD6CyCBkQVJcAE4i" +
 	"5FepAQAA"
 
-func main() {
-	f, err := os.Open("sadako.mp3")
-	if err != nil {
-		panic(err)
-	}
-
-	s, format, err := mp3.Decode(f)
-	if err != nil {
-		panic(err)
-	}
+// DrawAA 貞子のAAを描画する
+func DrawAA() {
 
 	b, err := base64.StdEncoding.DecodeString(aa)
 	if err != nil {
@@ -45,10 +31,4 @@ func main() {
 	}
 	fmt.Println(buf.String())
 
-	done := make(chan struct{})
-	speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10))
-	speaker.Play(beep.Seq(s, beep.Callback(func() {
-		close(done)
-	})))
-	_ = <-done
 }
