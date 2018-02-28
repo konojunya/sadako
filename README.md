@@ -33,6 +33,12 @@ $ make build
 $ make install
 ```
 
+## Who is Sadako?
+
+Sadako is a fictitious character who appears in a Japanese movie called a 'Ring'.
+
+Leave unrefined or grudge in this world, trigger a disaster starting from the "curse video" that curses and kills those who saw.
+
 ## Auther
 
 [@konojunya](https://twitter.com/konojunya)
