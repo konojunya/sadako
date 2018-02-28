@@ -1,6 +1,6 @@
 # sadako
 
-git pullをフックして貞子の音楽を流す。
+Sadako will appear after merge :)
 
 ![](https://raw.githubusercontent.com/konojunya/sadako/master/media/sadako.png)
 
@@ -12,13 +12,14 @@ first:
 $ go get github.com/konojunya/sadako
 ```
 
-貞子をgitリポジトリに住ませる
+- I will send Sadako to your git repository.
+
 
 ```
 $ sadako init
 ```
 
-貞子をgitリポジトリから抹消する
+- Remove Sadako from git repository.
 
 ```
 $ sadako rm
@@ -28,17 +29,7 @@ $ sadako rm
 
 ```
 $ dep ensure
-```
-
-sadakoの音を流すスクリプトをbuild
-
-```
 $ make build
-```
-
-sadakoコマンドの実行ファイルをbuildする
-
-```
 $ make install
 ```
 
